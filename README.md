@@ -1,10 +1,14 @@
 SantaHatDemo
 ============
-
-santa hat with holiday songs and LEDs synched with the music and a spinning fur ball on the hat!
+This program uses Energia to spice up a Santa hat for the holidays using an MSP430F5529 LaunchPad! This santa hat plays holiday songs and blinks a strip of LEDs synched with the music and a spinning fur ball on the hat using the grove servo!
 
 To install this, download the folder, unzip and rename the folder inside of the master folder from 
-dogBarkEnergia-master to just dogbark Drag this file into your ~/Energia where the rest of your projects
-are and place it there. Go into the folder and double click dogbar.ino and it will open energia Once open, 
-you will need to go to temboo and provide your own application keys and account info, wifi ssid and passwords, 
-and twilio and gmail profile information.
+SantaHatDemo-master to just SantaHatDemo Drag this file into your ~/Energia where the rest of your projects
+are and place it there. Go into the folder and double click SantaHatDemo.ino and it will open in energia.
+
+It is important to note that you will also need to take the servo.cpp file and replace the current one used. This is due to a collision between the tone library in energia and the servo library. They both use Timer A native to the MSP430F5529 LaunchPad. To account for this, the new servo.cpp file uses TimerB instead. 
+
+Servo File Edit Work-along
+Take the Servo.cpp file and replace the current Servo.cpp file in your file path. For example mine is: C:\Users\a0221660\Documents\energia-0101E0013\hardware\msp430\libraries\Servo 
+Place the file there and replace it with the old one. 
+
