@@ -12,5 +12,5 @@ IT IS IMPORTANT TO NOTE THAT IF YOU DO THIS, YOUR SERVO WILL NOT WORK ANYMORE ON
 
 Servo File Edit Work-along
 Take the Servo.cpp file and replace the current Servo.cpp file in your file path. For example mine is: C:\Users\a0221660\Documents\energia-0101E0013\hardware\msp430\libraries\Servo 
-Place the file there and replace it with the old one. 
+Place the file there and replace it with the old one. It would be smart to make sure to save the old servo.cpp file in order to reuse it when you want to use your G2 devices. DO THIS AT YOUR OWN RISK. :) 
 
